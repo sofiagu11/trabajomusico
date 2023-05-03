@@ -1,0 +1,7 @@
+.banner{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/musicossaz.appspot.com/o/BLACKPINK.jpg?alt=media&token=94befbf1-f949-4cd7-bded-f6342e04f1d5");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    padding: 25%;
+}

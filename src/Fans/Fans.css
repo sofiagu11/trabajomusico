@@ -1,0 +1,9 @@
+.fondo{
+    
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/musicossaz.appspot.com/o/fondo.jpg?alt=media&token=392bd040-11d6-4f6c-98cc-c2896b2bba14");
+    background-position: top center;
+    background-size: cover;
+    padding: 25%;
+    position: relative;
+    z-index: 1;
+}
