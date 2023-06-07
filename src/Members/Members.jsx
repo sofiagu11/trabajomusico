@@ -1,3 +1,4 @@
+import "./Members.css"
 export function Members() {
   let integrantes = [
     {
@@ -34,6 +35,15 @@ export function Members() {
     },
   ];
 
+  function quehagocuandosedeelevento(evento){
+    evento.target.classList.add("blancoYnegro") 
+    console.log("hola")
+  }
+  function quehagocuandosedeelotroevento(evento){
+   evento.target.classList.remove("blancoYnegro")
+   console.log("hola")
+  }
+
   return (
     <>
       <div className="row row-cols-1 row-cols-md-2">
@@ -41,12 +51,13 @@ export function Members() {
           return (
             <div className="row my-3 d-flex justify-content-evenly" key={integrante.id}>
               <div className="col-8">
-                <div className="card" style={{width:'20rem'}}>
+                <div className="card" style={{width:'20rem'}} >
                   <h3 className="text-center fw-bold">{integrante.nombre}</h3>
                   <img
                     src={integrante.foto}
                     alt="foto"
-                    className="img-fluid w-100"
+                    className="img-fluid w-100" onMouseOver={quehagocuandosedeelevento} 
+                    onMouseLeave={quehagocuandosedeelotroevento}
                   />
                   <section className="text-center my-2 mx-2 px-2">
                     <p className="">{integrante.nacimiento}</p>
